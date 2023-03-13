@@ -1,6 +1,6 @@
 # playground-monorepo
 
-이 리포지터리는 다양한 웹 개발 프레임워크를 테스트하고 학습하기 위해 사용하는 프로젝트들을 포함합니다:
+이 리포지터리는 다양한 웹 개발 프레임워크를 테스트하고 학습하기 위해 사용하는 프로젝트들을 포함합니다
 
 nextjs-playground: Next.js를 사용하여 만든 웹 어플리케이션입니다.
 vite-react-playground: Vite 기반의 React를 사용하여 만든 웹 어플리케이션입니다.
@@ -32,7 +32,7 @@ vite-react-playground 프로젝트는 Vite와 React를 사용하여 만든 웹 �
 
 ## svelte-kit-playground
 
-svelte-kit-playground 프로젝트는 Vite와 React를 사용하여 만든 웹 어플리케이션입니다.
+svelte-kit-playground 프로젝트는 Vite와 svelte를 사용하여 만든 웹 어플리케이션입니다.
 
 ### 사용 방법
 
