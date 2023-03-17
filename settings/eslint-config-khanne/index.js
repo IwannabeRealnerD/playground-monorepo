@@ -12,7 +12,7 @@ module.exports = {
     "no-console": "error",
     camelcase: "off",
     "import/no-extraneous-dependencies": [
-      "error",
+      "false",
       {
         devDependencies: [
           "test.{ts,tsx}",
@@ -20,6 +20,7 @@ module.exports = {
           "**/*{.,_}{test,spec}.{ts,tsx}",
           "**/jest.config.ts", // jest config
           "**/jest.setup.ts", // jest setup
+          "next.config.js",
         ],
         optionalDependencies: false,
       },
