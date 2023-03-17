@@ -5,10 +5,6 @@ module.exports = {
   rules: {
     "@typescript-eslint/no-explicit-any": "error",
     "@typescript-eslint/no-unused-vars": "error",
-    "react/jsx-filename-extension": [
-      "warn",
-      { extensions: [".ts", ".tsx"] },
-    ],
     "import/extensions": ["off"],
     "import/prefer-default-export": "off",
     "import/no-unresolved": "error",
