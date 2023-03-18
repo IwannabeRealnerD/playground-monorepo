@@ -12,7 +12,7 @@ module.exports = {
     "no-console": "error",
     camelcase: "off",
     "import/no-extraneous-dependencies": [
-      "false",
+      "off",
       {
         devDependencies: [
           "test.{ts,tsx}",
