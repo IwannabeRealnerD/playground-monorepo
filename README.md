@@ -32,7 +32,7 @@ svelte-kit-playground 프로젝트는 Vite와 svelte를 사용하여 만든 웹 
 
 ## ui-vite-playground
 
-ui-react-playground 프로젝트는 Vite와 React를 사용하여 만든 웹 어플리케이션입니다.
+ui-react-playground 프로젝트는 Vite와 React를 사용한 UI 컴포넌트 제작한 UI 제작을 위한 프로젝트입니다.
 
 ### 사용 방법
 
