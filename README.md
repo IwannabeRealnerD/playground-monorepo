@@ -19,17 +19,6 @@ nextjs-playground 프로젝트는 Next.js를 사용하여 만든 웹 어플리�
 3. `pnpm dev` 명령어를 실행하여 개발 서버를 시작합니다.
 4. 브라우저에서 http://localhost:3000 주소로 접속하여 어플리케이션을 확인합니다.
 
-## vite-react-playground
-
-vite-react-playground 프로젝트는 Vite와 React를 사용하여 만든 웹 어플리케이션입니다.
-
-### 사용 방법
-
-1. apps/vite-react-playground 디렉토리로 이동합니다.
-2. `pnpm i --frozen-lockfile` 명령어를 실행하여 의존성을 설치합니다.
-3. `pnpm dev` 명령어를 실행하여 개발 서버를 시작합니다.
-4. 브라우저에서 http://localhost:3000 주소로 접속하여 어플리케이션을 확인합니다.
-
 ## svelte-kit-playground
 
 svelte-kit-playground 프로젝트는 Vite와 svelte를 사용하여 만든 웹 어플리케이션입니다.
@@ -39,4 +28,15 @@ svelte-kit-playground 프로젝트는 Vite와 svelte를 사용하여 만든 웹 
 1. apps/svelte-kit-playground 디렉토리로 이동합니다.
 2. `pnpm i --frozen-lockfile` 명령어를 실행하여 의존성을 설치합니다.
 3. `pnpm dev` 명령어를 실행하여 개발 서버를 시작합니다.
-4. 브라우저에서 http://localhost:3000 주소로 접속하여 어플리케이션을 확인합니다.
+4. 브라우저에서 http://localhost:3001 주소로 접속하여 어플리케이션을 확인합니다.
+
+## ui-vite-playground
+
+ui-react-playground 프로젝트는 Vite와 React를 사용하여 만든 웹 어플리케이션입니다.
+
+### 사용 방법
+
+1. apps/ui-react-playground 디렉토리로 이동합니다.
+2. `pnpm i --frozen-lockfile` 명령어를 실행하여 의존성을 설치합니다.
+3. `pnpm dev` 명령어를 실행하여 개발 서버를 시작합니다.
+4. 브라우저에서 http://localhost:3002 주소로 접속하여 어플리케이션을 확인합니다.
