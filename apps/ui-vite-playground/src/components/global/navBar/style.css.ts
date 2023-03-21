@@ -9,6 +9,7 @@ export const cssObj = {
   }),
   heading: style({
     backgroundColor: "gray",
+    fontSize: "1.5rem",
   }),
   iconContainer: style({ display: "flex", alignItems: "center" }),
   iconButton: style({ fontSize: "1.3rem", backgroundColor: "red", display: "flex", alignItems: "center" }),
