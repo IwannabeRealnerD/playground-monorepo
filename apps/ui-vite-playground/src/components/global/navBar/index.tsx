@@ -1,8 +1,11 @@
+import { cssObj } from "./style.css";
+
 export const NavBar = () => {
   return (
     <nav>
-      <div>
-        <h1>DashBoard</h1>
+      <div className={cssObj.container}>
+        <h1 className={cssObj.heading}>DashBoard</h1>
+        <p>X</p>
       </div>
     </nav>
   );

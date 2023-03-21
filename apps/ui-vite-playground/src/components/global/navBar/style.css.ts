@@ -1,6 +1,13 @@
-import { style, globalStyle } from "@vanilla-extract/css";
+import { style } from "@vanilla-extract/css";
 
-export const myStyle = style({
-  display: "flex",
-  paddingTop: "3px",
-});
+export const cssObj = {
+  container: style({
+    display: "flex",
+    alignContent: "center",
+    justifyContent: "space-between",
+    backgroundColor: "pink",
+  }),
+  heading: style({
+    backgroundColor: "gray",
+  }),
+};
