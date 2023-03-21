@@ -10,4 +10,6 @@ export const cssObj = {
   heading: style({
     backgroundColor: "gray",
   }),
+  iconContainer: style({ display: "flex", alignItems: "center" }),
+  iconButton: style({ fontSize: "1.3rem", backgroundColor: "red", display: "flex", alignItems: "center" }),
 };
