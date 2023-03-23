@@ -13,4 +13,6 @@ export const cssObj = {
   }),
   iconContainer: style({ display: "flex", alignItems: "center" }),
   iconButton: style({ fontSize: "1.3rem", backgroundColor: "red", display: "flex", alignItems: "center" }),
+  searchBoxClosed: style({ width: 0, transition: "0.4s" }),
+  searchBoxOpened: style({ width: "10rem", transition: "0.4s" }),
 };
