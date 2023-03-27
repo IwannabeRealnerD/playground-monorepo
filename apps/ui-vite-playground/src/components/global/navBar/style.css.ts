@@ -19,7 +19,6 @@ export const cssObj = {
     alignItems: "center",
     gap: "0.5rem",
     height: "100%",
-    backgroundColor: "blue",
   }),
   container: style({ position: "relative", height: "100%" }),
   iconButton: style({
@@ -30,13 +29,11 @@ export const cssObj = {
     padding: "0.3rem",
     position: "relative",
     zIndex: "1",
-    // height: "100%",
     ":hover": { backgroundColor: "rgba(1,1,1,0.2)", borderRadius: "50%" },
   }),
   inputBox: style({ width: "100%" }),
 
   testContainer: style({
-    backgroundColor: "pink",
     height: "100%",
     display: "flex",
     alignItems: "center",
@@ -52,9 +49,6 @@ const searchBox = style({
   position: "absolute",
   right: 0,
   top: 0,
-  //  position: "absolute", top: "50%"
-  // top: "50%",
-  // transform: "translateY(-50%)",
 });
 
 export const searchBoxClosed = style([
