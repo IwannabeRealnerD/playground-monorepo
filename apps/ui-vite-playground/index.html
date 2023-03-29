@@ -9,10 +9,21 @@
       rel="stylesheet"
     />
     <style>
+      @media screen and (max-width: 1280px) {
+        html {
+          font-size: 14px;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        html {
+          font-size: 12px;
+        }
+      }
       body {
         margin: 0;
         overflow-wrap: break-word;
         font-family: "Noto Sans KR", sans-serif;
+        min-width: 360px;
       }
 
       /* Do not break Korean words */
@@ -20,6 +31,9 @@
         word-break: keep-all;
       }
 
+      button {
+        cursor: pointer;
+      }
       /* Reset img */
       img {
         max-width: 100%;
@@ -37,7 +51,7 @@
         border-collapse: collapse; /* table */
         border-spacing: 0; /* table */
         -webkit-appearance: none;
-        appearance: none; /* button, input, meter, progress, select, textarea */
+        appearance: none; /*button, input, meter, progress, select, textarea*/
       }
       [class]::before,
       [class]::after {

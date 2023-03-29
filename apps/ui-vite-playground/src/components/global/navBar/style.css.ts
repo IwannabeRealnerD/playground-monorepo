@@ -1,7 +1,7 @@
 import { style, keyframes } from "@vanilla-extract/css";
 
-const widthGrowKeyframe = keyframes({ "0%": { width: "0", opacity: 0 }, "100%": { width: "10rem", opacity: 1 } });
-const widthShrinkKeyframe = keyframes({ "0%": { width: "10rem", opacity: 1 }, "100%": { width: "0", opacity: 0 } });
+const widthGrowKeyframe = keyframes({ "0%": { width: "0", opacity: 0 }, "100%": { width: "13rem", opacity: 1 } });
+const widthShrinkKeyframe = keyframes({ "0%": { width: "13rem", opacity: 1 }, "100%": { width: "0", opacity: 0 } });
 
 export const cssObj = {
   wrapper: style({
@@ -20,7 +20,8 @@ export const cssObj = {
     gap: "0.5rem",
     height: "100%",
   }),
-  container: style({ position: "relative", height: "100%" }),
+  container: style({ position: "relative", height: "100%", display: "flex", alignItems: "center" }),
+
   iconButton: style({
     fontSize: "1.3rem",
     display: "flex",
@@ -29,26 +30,25 @@ export const cssObj = {
     padding: "0.3rem",
     position: "relative",
     zIndex: "1",
-    ":hover": { backgroundColor: "rgba(1,1,1,0.2)", borderRadius: "50%" },
+    borderRadius: "50%",
+    backgroundColor: "rgba(1,1,1,0.2)",
+    ":hover": { backgroundColor: "rgba(1,1,1,0.2)" },
   }),
   inputBox: style({ width: "100%" }),
-
-  testContainer: style({
-    height: "100%",
-    display: "flex",
-    alignItems: "center",
-  }),
 };
 
 const searchBox = style({
   minHeight: "2.5rem",
-  padding: "0.8rem",
+  padding: "0.5rem",
   height: "auto",
-  borderRadius: "2rem",
   backgroundColor: "rgba(1,1,1,0.2)",
   position: "absolute",
-  right: 0,
-  top: 0,
+  right: "-0.25rem",
+  top: "0.19rem",
+  display: "flex",
+  justifyContent: "center",
+  flexDirection: "column",
+  borderRadius: "2rem",
 });
 
 export const searchBoxClosed = style([

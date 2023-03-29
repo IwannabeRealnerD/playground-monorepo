@@ -34,17 +34,17 @@ export const NavBar = () => {
       <h1 className={cssObj.heading}>DashBoard</h1>
       <div className={cssObj.inputContainer}>
         <div className={cssObj.container}>
-          <div className={cssObj.testContainer}>
-            <button
-              type="button"
-              className={cssObj.iconButton}
-              onClick={() => {
-                setIsTriggered((prevValue) => !prevValue);
-              }}
-            >
-              {isSearchAnimation ? <AiOutlineClose /> : <AiOutlineSearch />}
-            </button>
-            {(isSearchOpen || isSearchAnimation) && (
+          <button
+            type="button"
+            className={cssObj.iconButton}
+            onClick={() => {
+              setIsTriggered((prevValue) => !prevValue);
+              setSearch("");
+            }}
+          >
+            {isSearchAnimation ? <AiOutlineClose /> : <AiOutlineSearch />}
+          </button>
+          {(isSearchOpen || isSearchAnimation) && (
               <div className={isSearchAnimation ? searchBoxOpened : searchBoxClosed}>
                 <input
                   className={cssObj.inputBox}
@@ -56,8 +56,7 @@ export const NavBar = () => {
                 {Boolean(filteredCars.length) &&
                   filteredCars?.map((car, index) => index < 3 && <button key={car.name}>{car.name}</button>)}
               </div>
-            )}
-          </div>
+          )}
         </div>
         <button
           type="button"
