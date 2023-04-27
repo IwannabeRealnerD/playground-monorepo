@@ -45,17 +45,27 @@ export const NavBar = () => {
             {isSearchAnimation ? <AiOutlineClose /> : <AiOutlineSearch />}
           </button>
           {(isSearchOpen || isSearchAnimation) && (
-              <div className={isSearchAnimation ? searchBoxOpened : searchBoxClosed}>
-                <input
-                  className={cssObj.inputBox}
-                  placeholder="입력하세요"
-                  onChange={(e) => {
-                    setSearch(e.target.value);
-                  }}
-                />
-                {Boolean(filteredCars.length) &&
-                  filteredCars?.map((car, index) => index < 3 && <button key={car.name}>{car.name}</button>)}
-              </div>
+            <div className={isSearchAnimation ? searchBoxOpened : searchBoxClosed}>
+              <input
+                className={cssObj.inputBox}
+                placeholder="입력하세요"
+                onChange={(e) => {
+                  setSearch(e.target.value);
+                }}
+              />
+              {Boolean(filteredCars.length) && (
+                <div className={cssObj.buttonContainer}>
+                  {filteredCars.map(
+                    (car, index) =>
+                      index < 3 && (
+                        <button className={cssObj.brandButton} key={car.name}>
+                          {car.name}
+                        </button>
+                      )
+                  )}
+                </div>
+              )}
+            </div>
           )}
         </div>
         <button

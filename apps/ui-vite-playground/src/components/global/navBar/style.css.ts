@@ -8,7 +8,7 @@ export const cssObj = {
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
-    height: "3rem",
+    height: "3.5rem",
     borderBottom: "1px solid #111111",
   }),
   heading: style({
@@ -34,21 +34,30 @@ export const cssObj = {
     backgroundColor: "rgba(1,1,1,0.2)",
     ":hover": { backgroundColor: "rgba(1,1,1,0.2)" },
   }),
-  inputBox: style({ width: "100%" }),
+  inputBox: style({
+    width: "9rem",
+    height: "1.5rem",
+    ":focus": {
+      outline: "none",
+    },
+  }),
+  buttonContainer: style({ display: "flex", flexDirection: "column", margin: "0.5rem 0", gap: "0.5rem" }),
+  brandButton: style({ backgroundColor: "pink", width: "fit-content" }),
 };
 
 const searchBox = style({
   minHeight: "2.5rem",
-  padding: "0.5rem",
+  padding: "0.8rem",
   height: "auto",
   backgroundColor: "rgba(1,1,1,0.2)",
   position: "absolute",
   right: "-0.25rem",
-  top: "0.19rem",
+  top: "0.20rem",
   display: "flex",
   justifyContent: "center",
   flexDirection: "column",
-  borderRadius: "2rem",
+  borderRadius: "15px",
+  width: "4rem",
 });
 
 export const searchBoxClosed = style([
