@@ -1,4 +1,4 @@
-# Logs
+# 로그 관련
 logs
 *.log
 npm-debug.log*
@@ -12,7 +12,13 @@ dist
 dist-ssr
 *.local
 
-# Editor directories and files
+# 빌드 결과물 관련
+dist
+.svelte-kit
+.next
+
+
+# 에디터관련 디렉터리와 파일들
 .vscode/*
 !.vscode/extensions.json
 .idea
