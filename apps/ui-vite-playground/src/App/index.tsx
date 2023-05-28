@@ -4,6 +4,7 @@ import { sharedTestFunction } from "shared-khanne-utils";
 
 export const App: FunctionComponent = () => {
   sharedTestFunction();
+  
   return (
     <main>
       <NavBar />

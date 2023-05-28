@@ -23,5 +23,8 @@
     "@next/bundle-analyzer": "^13.2.4",
     "eslint-config-khanne-nextjs": "workspace:^1.0.0",
     "prettier": "^2.8.0"
-  }
+  },
+  "browserslist": [
+    "chrome 50"
+  ]
 }
