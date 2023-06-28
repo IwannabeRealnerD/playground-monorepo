@@ -1,8 +1,11 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable } from "@nestjs/common";
 
 @Injectable()
 export class AppService {
-  getHello(): string {
-    return 'Hello World!';
+  introduceR1250RS(): string {
+    return "Sports Tourer model of BMW Motorrad";
+  }
+  anotherEndpoint(): string {
+    return "Another endpoint";
   }
 }

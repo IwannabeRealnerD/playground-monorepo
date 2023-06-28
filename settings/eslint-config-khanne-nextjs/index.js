@@ -1,11 +1,6 @@
 module.exports = {
   parser: "@typescript-eslint/parser",
-  extends: [
-    "next/core-web-vitals",
-    "airbnb",
-    "plugin:@typescript-eslint/recommended",
-    "prettier",
-  ],
+  extends: ["next/core-web-vitals", "airbnb", "plugin:@typescript-eslint/recommended", "prettier"],
   settings: {
     "import/parsers": {
       "@typescript-eslint/parser": [".ts", ".tsx"],
@@ -29,10 +24,7 @@ module.exports = {
         namedComponents: ["arrow-function", "function-declaration"],
       },
     ],
-    "react/jsx-filename-extension": [
-      "warn",
-      { extensions: [".ts", ".tsx"] },
-    ],
+    "react/jsx-filename-extension": ["warn", { extensions: [".ts", ".tsx"] }],
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
     "react/jsx-key": "error",
@@ -47,7 +39,7 @@ module.exports = {
       },
     ],
     "import/no-unresolved": "off",
-    "arrow-body-style": ["error", "always"],
+    "arrow-body-style": ["error", "as-needed"],
     "no-console": "error",
     "@next/next/no-img-element": "error",
     camelcase: "off",
