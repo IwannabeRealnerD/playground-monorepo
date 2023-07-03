@@ -4,7 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-nextjs": "pnpm turbo build --scope=nextjs-playground --include-dependencies --no-deps",
+    "dev-nextjs": "pnpm --filter nextjs-playground dev",
+    "start-nextjs": "pnpm --filter nextjs-playground start",
+    "analyze-nextjs": "pnpm --filter nextjs-playground analyze",
+    "build-uivite": "pnpm turbo build --scope=ui-vite-playground --include-dependencies --no-deps",
+    "dev-uivite": "pnpm --filter ui-vite-playground dev",
+    "storybook-uivite": "pnpm --filter ui-vite-playground storybook",
+    "start-uivite": "pnpm --filter ui-vite-playground start"
   },
   "keywords": [],
   "author": "",

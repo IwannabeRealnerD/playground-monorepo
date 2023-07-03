@@ -3,8 +3,26 @@
   "pipeline": {
     "build": {
       "dependsOn": ["^build"],
-      "outputs": [".next/**", "!.next/cache/**", "dist/**", ".svelte-kit/**"]
+      "outputs": [".next/**", "!.next/cache/**"]
     },
-    "lint": {}
-  }
+    "deploy": {
+      "dependsOn": ["build", "test", "lint"]
+    },
+    "test": {
+      "dependsOn": ["build"],
+      "inputs": [
+        "src/**/*.tsx",
+        "src/**/*.ts",
+        "test/**/*.ts",
+        "test/**/*.tsx"
+      ]
+    },
+    "lint": {},
+    "type-check": { "dependsOn": ["lint"] },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    }
+  },
+  "globalEnv": ["NEXT_PUBLIC_VERCEL_ENV", "NODE_ENV"]
 }
