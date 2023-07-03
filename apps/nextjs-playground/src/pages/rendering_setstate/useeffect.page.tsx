@@ -1,20 +1,23 @@
 import { NextPage } from "next";
-import { Profiler, useRef, useState } from "react";
+import { Profiler, useEffect, useRef, useState } from "react";
 
-import { ChildComponent } from "./component/ChildComponent";
+import { ChildComponent } from "./component";
 
-const EarlyReturnPage: NextPage = () => {
+const UseEffectPage: NextPage = () => {
   const [count, setCount] = useState(0);
   const [prevCount, setPrevCount] = useState(count);
   const [trend, setTrend] = useState<null | string>(null);
+
   const renderCount = useRef(0);
   const renderTimeResult = useRef(0);
 
-  if (prevCount !== count) {
-    setPrevCount(count);
-    setTrend(count > prevCount ? "increasing" : "decreasing");
-    return null;
-  }
+  useEffect(() => {
+    if (prevCount !== count) {
+      setPrevCount(count);
+      setTrend(count > prevCount ? "increasing" : "decreasing");
+    }
+  }, [count, prevCount]);
+
   return (
     <Profiler
       id="Sidebar"
@@ -35,7 +38,7 @@ const EarlyReturnPage: NextPage = () => {
     >
       <main>
         {Boolean(new Array(100000).fill(0).forEach((index, i) => i + 1 + index))}
-        <h1>Early return page</h1>
+        <h1>useEffect</h1>
         <button
           type="button"
           onClick={() => {
@@ -60,4 +63,4 @@ const EarlyReturnPage: NextPage = () => {
   );
 };
 
-export default EarlyReturnPage;
+export default UseEffectPage;

@@ -1,17 +1,19 @@
 import { NextPage } from "next";
 import { Profiler, useRef, useState } from "react";
 
-import { ChildComponent } from "./component/ChildComponent";
+import { ChildComponent } from "./component";
 
-const NoEarlyReturnPage: NextPage = () => {
+const EarlyReturnPage: NextPage = () => {
   const [count, setCount] = useState(0);
   const [prevCount, setPrevCount] = useState(count);
   const [trend, setTrend] = useState<null | string>(null);
   const renderCount = useRef(0);
   const renderTimeResult = useRef(0);
+
   if (prevCount !== count) {
     setPrevCount(count);
     setTrend(count > prevCount ? "increasing" : "decreasing");
+    return null;
   }
   return (
     <Profiler
@@ -33,7 +35,7 @@ const NoEarlyReturnPage: NextPage = () => {
     >
       <main>
         {Boolean(new Array(100000).fill(0).forEach((index, i) => i + 1 + index))}
-        <h1>no early return</h1>
+        <h1>Early return page</h1>
         <button
           type="button"
           onClick={() => {
@@ -58,4 +60,4 @@ const NoEarlyReturnPage: NextPage = () => {
   );
 };
 
-export default NoEarlyReturnPage;
+export default EarlyReturnPage;
