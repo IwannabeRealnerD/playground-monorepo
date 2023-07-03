@@ -16,7 +16,7 @@ dist-ssr
 dist
 .svelte-kit
 .next
-
+.turbo
 
 # 에디터관련 디렉터리와 파일들
 .vscode/*
