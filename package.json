@@ -12,9 +12,13 @@
     "build-uivite": "pnpm turbo build --scope=ui-vite-playground --include-dependencies --no-deps",
     "dev-uivite": "pnpm --filter ui-vite-playground dev",
     "storybook-uivite": "pnpm --filter ui-vite-playground storybook",
-    "start-uivite": "pnpm --filter ui-vite-playground start"
+    "start-uivite": "pnpm --filter ui-vite-playground start",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^8.0.0"
+  }
 }
