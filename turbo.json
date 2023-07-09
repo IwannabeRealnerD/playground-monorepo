@@ -10,19 +10,10 @@
     },
     "test": {
       "dependsOn": ["build"],
-      "inputs": [
-        "src/**/*.tsx",
-        "src/**/*.ts",
-        "test/**/*.ts",
-        "test/**/*.tsx"
-      ]
+      "inputs": ["src/**/*.tsx", "src/**/*.ts", "test/**/*.ts", "test/**/*.tsx"]
     },
     "lint": {},
-    "type-check": { "dependsOn": ["lint"] },
-    "dev": {
-      "cache": false,
-      "persistent": true
-    }
+    "type-check": { "dependsOn": ["lint"] }
   },
   "globalEnv": ["NEXT_PUBLIC_VERCEL_ENV", "NODE_ENV"]
 }
