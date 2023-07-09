@@ -2,7 +2,7 @@
   <h2 align="center">playground-monorepo</h2>
 
   <p align="center">
-    monorepo for playgrounds(nextjs(react), vite(svelte), vite(react), nestjs)
+    monorepo for Front End Developer's playground
   </p>
 </div>
 
@@ -16,7 +16,7 @@
   <img src="https://img.shields.io/badge/turborepo-EF4444?style=for-the-badge&logo=turborepo&logoColor=white">
 </div>
 
-This repository is a monorepo built on top of pnpm workspace and contains projects that I use to test and learn various web development frameworks.
+This repository is a monorepo built on top of pnpm workspace. It contains projects that I use to test and learn various web development frameworks.
 
 ## Projects in the repository
 
@@ -24,10 +24,10 @@ This repository is a monorepo built on top of pnpm workspace and contains projec
 
 ### Project description
 
-- nextjs-playground: playground based on Next.js 13 and React 18
-- vite-react-playground: Web UI component playground based on Vite and React 18
-- svelte-kit-playground: playground using Svelte Kit
-- nest-server: backend playground with a server based on nestjs (no progress yet)
+- `nextjs-playground``: playground based on Next.js 13 and React 18
+- `vite-react-playground``: Web UI component playground based on Vite and React 18
+- `svelte-kit-playground``: playground using Svelte Kit
+- `nest-server``: backend playground with a server based on nestjs (no progress yet)
 
 ## How to run projects
 
