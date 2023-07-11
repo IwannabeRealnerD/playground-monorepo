@@ -104,6 +104,9 @@ importers:
       eslint:
         specifier: 8.36.0
         version: 8.36.0
+      eslint-config-khanne-base:
+        specifier: workspace:^
+        version: link:../../settings/eslint-config-khanne-base
       eslint-config-khanne-old:
         specifier: workspace:^
         version: link:../../settings/eslint-config-khanne-old
