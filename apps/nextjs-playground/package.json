@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^13.2.4",
+    "eslint-config-khanne-react": "workspace:^",
     "prettier": "^2.8.0"
   },
   "browserslist": [
