@@ -1,6 +1,8 @@
 module.exports = {
+  root: true,
+
   parser: "@typescript-eslint/parser",
-  extends: ["plugin:@typescript-eslint/recommended"],
+  extends: ["plugin:@typescript-eslint/recommended", "plugin:eslint-plugin-import/recommended"],
   settings: {
     "import/parsers": {
       "@typescript-eslint/parser": [".ts", ".tsx"],
@@ -15,7 +17,7 @@ module.exports = {
     "@typescript-eslint/no-unused-vars": "error",
     "import/extensions": ["off"],
     "import/prefer-default-export": "off",
-    "import/no-unresolved": "off",
+    "import/no-unresolved": "error",
     "arrow-body-style": ["error", "as-needed"],
     "no-console": "error",
     camelcase: "off",
