@@ -1,8 +1,6 @@
 module.exports = {
-  root: true,
-
   parser: "@typescript-eslint/parser",
-  extends: ["plugin:@typescript-eslint/recommended", "plugin:eslint-plugin-import/recommended"],
+  extends: ["plugin:@typescript-eslint/recommended"],
   settings: {
     "import/parsers": {
       "@typescript-eslint/parser": [".ts", ".tsx"],

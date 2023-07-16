@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ["airbnb","airbnb/hooks", "prettier"],
+  extends: ["airbnb", "prettier"],
   rules: {
     "react/no-unknown-property": ["error", { ignore: ["css"] }],
     "react/require-default-props": "off",
