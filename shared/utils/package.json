@@ -8,5 +8,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "eslint-config-khanne-base": "workspace:^",
+    "eslint-plugin-import": "^2.27.5"
+  }
 }

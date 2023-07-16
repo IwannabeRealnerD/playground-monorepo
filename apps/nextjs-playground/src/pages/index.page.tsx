@@ -1,3 +1,7 @@
 export default function Home() {
-  return <h1>nextjs-playground</h1>;
+  return (
+    <div>
+      <h1>nextjs-playground</h1>
+    </div>
+  );
 }
