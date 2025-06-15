@@ -1,6 +1,8 @@
+> **Note:** This project has been archived and is no longer maintained. Please checkout new project for nextjs boilerplates with create command: [nextjs-starter-kit] (https://github.com/IwannabeRealnerD/nextjs-starter-kit).
+
+
 <div align="center">
   <h2 align="center">playground-monorepo</h2>
-
   <p align="center">
     monorepo for Front End Developer's playground
   </p>
